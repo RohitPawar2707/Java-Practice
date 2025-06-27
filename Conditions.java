@@ -67,6 +67,7 @@ public class Conditions {
         break;
         case 4 : System.out.println("Invalid Button ");
         break;
+        default : System.out.println("Enter vallid button");
     }
 
     
