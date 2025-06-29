@@ -80,30 +80,30 @@
 
 // Q. Find the factorial of number
 
-    import java.util.*;
+import java.util.*;
 
-    public class Function {
-        // New Function
-        public static int calculateFactorial(int n) {
+public class Function {
+    // New Function
+    public static int calculateFactorial(int n) {
 
-            int factorial = 1;
-            for (int i = n; i > 1; i--) {
-                factorial = factorial * i;
-            }
-            System.out.println("The Factorial Of Given Number Is: " + factorial);
-            return factorial;
+        int factorial = 1;
+        for (int i = n; i > 1; i--) {
+            factorial = factorial * i;
         }
-
-        // Main Class
-        public static void main(String args[]) {
-            // Take the input from user
-            Scanner sc = new Scanner(System.in);
-
-            System.out.print("Enter the number: ");
-            int n = sc.nextInt();
-
-            // Call the function
-            calculateFactorial(n);
-
-        }
+        System.out.println("The Factorial Of Given Number Is: " + factorial);
+        return factorial;
     }
+
+    // Main Class
+    public static void main(String args[]) {
+        // Take the input from user
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number: ");
+        int n = sc.nextInt();
+
+        // Call the function
+        calculateFactorial(n);
+
+    }
+}
