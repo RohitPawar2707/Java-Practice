@@ -66,37 +66,36 @@
 // Q. Take an array as input from the user search for a given number x and print index at which it occurs 
 
 import java.util.*;
+
 public class Arrays {
-    public static void main (String args []){
-        Scanner sc = new Scanner (System.in);
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Give the size of an array that you want: ");
         int size = sc.nextInt();
 
-        // Initialize the array 
-        int number [] = new int [size];
+        // Initialize the array
+        int number[] = new int[size];
 
-        //Take the input from the user 
+        // Take the input from the user
         System.out.println("Enter the array: ");
-        for (int i=0; i<size; i++){
-            number [i] = sc.nextInt();
+        for (int i = 0; i < size; i++) {
+            number[i] = sc.nextInt();
         }
-        
+
         System.out.println("Enter the number that you want to find in the array: ");
         int x = sc.nextInt();
 
         // Output
-        for (int i=0; i<size; i++){
+        for (int i = 0; i < size; i++) {
 
-            if (number [i] == x){
-                System.out.println("The number that you want to find in array is at the index of : " +i);
-            }
-            else {
+            if (number[i] == x) {
+                System.out.println("The number that you want to find in array is at the index of : " + i);
+            } else {
                 System.out.println("There is no such number in the array");
             }
 
         }
-
 
     }
 }
